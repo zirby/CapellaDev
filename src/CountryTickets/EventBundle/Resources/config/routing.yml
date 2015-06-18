@@ -1,3 +1,15 @@
-event_homepage:
+blocks:
     path:     /
-    defaults: { _controller: EventBundle:Event:index }
+    defaults: { _controller: EventBundle:Block:index }
+
+presentation:
+    path:     /presentation
+    defaults: { _controller: EventBundle:Block:presentation }
+    
+panier:
+    path:     /panier
+    defaults: { _controller: EventBundle:Panier:index }
+    
+validation:
+    path:     /panier/validation
+    defaults: { _controller: EventBundle:Panier:validation }

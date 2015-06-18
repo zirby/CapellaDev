@@ -6,8 +6,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PanierController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction()
     {
-        return $this->render('EventBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('EventBundle:Default:Panier/layout/panier.html.twig');
+    }
+    public function validationAction()
+    {
+        return $this->render('EventBundle:Default:Panier/layout/validation.html.twig');
     }
 }
